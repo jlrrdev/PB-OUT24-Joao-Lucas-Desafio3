@@ -56,7 +56,7 @@ import p_img52 from './p_img52.png'
 
 
 import logo from './navbar/logo.png'
-import hero_img from './hero_img.png'
+import hero_img from './hero/hero_img.png'
 import cart_icon from './navbar/cart_icon.png'
 import bin_icon from './bin_icon.png'
 import dropdown_icon from './navbar/dropdown_icon.png'

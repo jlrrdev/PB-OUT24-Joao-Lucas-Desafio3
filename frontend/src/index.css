@@ -5,3 +5,14 @@
 a.active hr{
     display: block;
 }
+
+*{
+    font-family: "Satoshi";
+    font-weight: 400;
+}
+
+.integral-cf{
+    font-family: "Integral CF Regular";
+    font-weight: 700;
+    font-style: normal;
+}
