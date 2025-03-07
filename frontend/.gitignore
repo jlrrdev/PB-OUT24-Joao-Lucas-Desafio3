@@ -25,4 +25,4 @@ dist-ssr
 
 
 #Ignorando assets (REMOVER)
-frontend/src/assets/*
+frontend/src/assets/
