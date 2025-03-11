@@ -58,20 +58,23 @@ import p_img52 from './clothes/p_img52.png'
 import logo from './navbar/logo.png'
 import hero_img from './hero/hero_img.png'
 import cart_icon from './navbar/cart_icon.png'
-import bin_icon from './bin_icon.png'
+import bin_icon from './cartpage/bin_icon.png'
 import dropdown_icon from './navbar/dropdown_icon.png'
 import exchange_icon from './policy/exchange_icon.png'
 import profile_icon from './navbar/profile_icon.png'
 import quality_icon from './policy/quality_icon.png'
 import search_icon from './navbar/search_icon.png'
-import star_dull_icon from './star_dull_icon.png'
-import star_icon from './star_icon.png'
+import star_dull_icon from './clothes/stars/star_dull_icon.png'
+import star_icon from './clothes/stars/star_icon.png'
 import support_img from './policy/support_img.png'
 import menu_icon from './navbar/menu_icon.png'
 import about_img from './about_img.png'
 import contact_img from './contact_img.png'
-import razorpay_logo from './razorpay_logo.png'
-import stripe_logo from './stripe_logo.png'
+import gpay_logo from './cardlogo/G Pay.png'
+import apple_logo from './cardlogo/applePay.png'
+import mastercard_logo from './cardlogo/Mastercard.png'
+import paypal_logo from './cardlogo/Paypal.png'
+import visa_logo from './cardlogo/Visa.png'
 import cross_icon from './searchbar/cross_icon.png'
 
 export const assets = {
@@ -90,8 +93,11 @@ export const assets = {
     menu_icon,
     about_img,
     contact_img,
-    razorpay_logo,
-    stripe_logo,
+    gpay_logo,
+    apple_logo,
+    mastercard_logo,
+    paypal_logo,
+    visa_logo,
     cross_icon
 }
 
