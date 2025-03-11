@@ -9,7 +9,7 @@ const Hero = () => {
 
       <div className="w-full sm:w-1/2 flex items-center justify-center py-10 sm:py-0 bg-[#F2F0F1]">
         <div className="text-[#000000]">
-            <h1 className='text-3x1 sm:py-3 lg:text-5x1 leading-relaxed integral-cf'>
+            <h1 className='text-3xl sm:py-3 lg:text-5xl leading-relaxed integral-cf'>
                 FIND CLOTHES <br/>
                 THAT MATCHES <br/>
                 YOUR STYLE
