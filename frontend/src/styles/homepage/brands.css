@@ -1,0 +1,59 @@
+  /* Brands */
+  
+  #brand {
+    background-color: var(--black);
+  }
+  
+  .brand-container {
+    height: 122px;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 106px;
+  }
+  
+  .brand-container img {
+    transition: all 0.2s ease-in-out;
+  }
+
+   /* Media Query for Tablet */
+  
+   @media (max-width: 1100px) {
+  
+    /* Brands */
+  
+    .brand-container {
+      max-width: 700px;
+      flex-wrap: wrap;
+      gap: 34px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      justify-content: space-around;
+      height: unset;
+    }
+   }
+
+  /* Media Query for Phone */
+  
+  @media (max-width: 700px) {
+  
+    /* Brands */
+  
+    .brand-container {
+      padding: 40px 16px;
+      gap: 20px;
+    }
+  
+    .brand-container div {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .brand-container img {
+      max-width: 180px;
+      max-height: 23px;
+    }
+  }

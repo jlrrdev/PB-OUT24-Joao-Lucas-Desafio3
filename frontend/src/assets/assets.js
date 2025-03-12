@@ -76,6 +76,33 @@ import mastercard_logo from './cardlogo/Mastercard.png'
 import paypal_logo from './cardlogo/Paypal.png'
 import visa_logo from './cardlogo/Visa.png'
 import cross_icon from './searchbar/cross_icon.png'
+import smallstar from './hero/smallstar.png'
+import bigstar from './hero/bigstar.png'
+
+// Brands
+
+import calvin from './brand/calvin.png'
+import gucci from './brand/gucci.png'
+import prada from './brand/prada.png'
+import versace from './brand/versace.png'
+import zara from './brand/zara.png'
+
+// Footer
+
+    // Social
+
+    import twitter_logo from './sociallogo/logo-twitter 2.png'
+    import facebook_logo from './sociallogo/logo-fb-simple 2.png'
+    import instagram_logo from './sociallogo/logo-instagram 1.png'
+    import github_logo from './sociallogo/logo-github 1.png'
+
+    // Cards-Logo-Footer
+
+    import gpay_logo_footer from './cardlogo/G Pay_footer.png'
+    import apple_logo_footer from './cardlogo/applePay_footer.png'
+    import mastercard_logo_footer from './cardlogo/Mastercard_footer.png'
+    import paypal_logo_footer from './cardlogo/Paypal_footer.png'
+    import visa_logo_footer from './cardlogo/Visa_footer.png'
 
 export const assets = {
     logo,
@@ -98,7 +125,27 @@ export const assets = {
     mastercard_logo,
     paypal_logo,
     visa_logo,
-    cross_icon
+    cross_icon,
+    smallstar,
+    bigstar,
+    calvin,
+    gucci,
+    prada,
+    versace,
+    zara,
+
+    // Footer
+
+    twitter_logo,
+    facebook_logo,
+    instagram_logo,
+    github_logo,
+    gpay_logo_footer,
+    apple_logo_footer,
+    mastercard_logo_footer,
+    paypal_logo_footer,
+    visa_logo_footer
+    
 }
 
 export const products = [

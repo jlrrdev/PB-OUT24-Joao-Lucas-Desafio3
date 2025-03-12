@@ -17,7 +17,14 @@ const ShopContextProvider = (props) => {
     const addToCart = async (itemId,size) => {
 
         if(!size){
-            toast.error('Select Product Size');
+            toast.error('Select Product Size', {
+                position: "bottom-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+            });
             return
         }
 
@@ -37,6 +44,15 @@ const ShopContextProvider = (props) => {
         }
 
         setCartItems(cartData);
+
+        toast.success('Product added to cart', {
+            position: "bottom-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+        });
 
     }
 

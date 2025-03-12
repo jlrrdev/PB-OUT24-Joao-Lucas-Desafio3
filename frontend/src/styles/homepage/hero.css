@@ -1,0 +1,237 @@
+/* Hero Section */
+  
+  .hero-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+  
+  .hero-section .left .herotext h1 {
+    font-family: "Integral CF Bold", serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: left;
+    color: var(--black);
+    margin: 0;
+    padding-top: 90px;
+  }
+  
+  .hero-section .left .herotext p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: var(--lightblack);
+    margin: 0;
+    margin-top: 32px;
+    width: 580px;
+  }
+  
+  .hero-section .left .btn.dark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 218px;
+    height: 52px;
+    margin-top: 32px;
+  }
+  
+  .hero-section .left {
+    flex: 1;
+  }
+  
+  .hero-section .right {
+    align-self: flex-end;
+  }
+  
+  .hero-image {
+    position: relative;
+  }
+  
+  #coupleimg {
+    height: 620px;
+    display: block;
+  }
+  
+  .star {
+    position: absolute;
+    transition: transform 0.7s ease-in-out;
+  }
+  
+  .star:hover {
+    transform: rotate(180deg);
+  }
+  
+  .small {
+    top: 40%;
+    left: 8%;
+  }
+  
+  .big {
+    top: 10%;
+    left: 80%;
+  }
+  
+/* Achievement Cards */
+  
+  .achievement-cards {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 120px;
+  }
+  
+  .achievement-card h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: left;
+    color: var(--black);
+    margin: 0;
+  }
+  
+  .achievement-card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: var(--lightblack);
+    margin: 0;
+  }
+  
+  .achievement-card {
+    transition: all 0.2s ease-in-out;
+    cursor: default;
+  }
+  
+  .achievementhr {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+  
+  .maincards {
+    display: flex;
+  }
+
+     /* Media Query for Tablet */
+  
+     @media (max-width: 1100px) {
+
+      /* Hero Section */
+  
+    .hero-section {
+      flex-direction: column;
+    }
+  
+    .hero-section .right {
+      align-self: center;
+    }
+  
+    .hero-section .left .herotext h1 {
+      padding-top: 75px;
+    }
+  
+    .hero-section .left .herotext p {
+      margin-top: 20px;
+    }
+  
+    .hero-section .left .btn.dark {
+      margin: auto;
+      margin-top: 24px;
+    }
+  
+    .achievement-cards {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+      padding-bottom: 20px;
+    }
+  
+    #hidehr {
+      display: none;
+    }
+  
+    #downcard {
+      margin-top: 12px;
+    }
+  
+    .maincards {
+      width: 100%;
+      justify-content: space-around;
+    }
+  
+    #coupleimg {
+      height: 500px;
+    }
+
+     }
+  
+  /* Media Query for Phone */
+  
+  @media (max-width: 700px) {
+  
+    /* Hero Section */
+  
+    .hero-section .left {
+      width: 100%;
+      padding: 0 16px;
+      padding-top: 10px;
+    }
+  
+    .hero-section .left .herotext h1 {
+      font-size: 36px;
+      line-height: 34px;
+      padding-top: 0;
+    }
+  
+    .hero-section .left .herotext p {
+      font-size: 14px;
+      margin-top: 20px;
+      width: 100%;
+    }
+  
+    .hero-section .left .btn.dark {
+      width: unset;
+    }
+  
+    .hero-section .right {
+      overflow: hidden;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .maincards {
+      justify-content: space-evenly;
+    }
+  
+    .achievement-card h3 {
+      font-size: 24px;
+      line-height: 32.4px;
+    }
+  
+    .achievement-card p {
+      font-size: 12px;
+      line-height: 22px;
+    }
+  
+    #coupleimg {
+      height: 450px;
+    }
+  
+    .big {
+      width: 74px;
+      top: 0;
+      left: 70%;
+    }
+  
+    .small {
+      width: 44px;
+      top: 25%;
+      left: 15%;
+    }
+  }

@@ -3,26 +3,81 @@ import {assets} from '../assets/assets'
 
 const Hero = () => {
   return (
-    <div className='flex flex-col sm:flex-row border'>
 
-      {/* Hero Left Side */}
+    // Hero Section
 
-      <div className="w-full sm:w-1/2 flex items-center justify-center py-10 sm:py-0 bg-[#F2F0F1]">
-        <div className="text-[#000000]">
-            <h1 className='text-3xl sm:py-3 lg:text-5xl leading-relaxed integral-cf'>
-                FIND CLOTHES <br/>
-                THAT MATCHES <br/>
-                YOUR STYLE
-            </h1>
-            <p className='text-sm md:text-base text-[#00000099]'>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+    <section className="header">
+      <header>
+        <div className="mobile-nowrap wrapper">
+          <div className="hero-section">
+            <div className="left">
+              <div className="herotext">
+                <h1>
+                  FIND CLOTHES <br />
+                  THAT MATCHES <br />
+                  YOUR STYLE
+                </h1>
+
+                <p>
+                  Browse through our diverse range of meticulously crafted
+                  garments, designed to bring out your individuality and cater
+                  to your sense of style.
+                </p>
+              </div>
+
+              <a href="#" className="btn dark">Shop Now</a>
+
+              <div id="acvcrds" className="achievement-cards">
+                <div className="maincards">
+                  <div className="achievement-card">
+                    <h3>200+</h3>
+                    <p>International Brands</p>
+                  </div>
+
+                  <hr className="achievementhr" />
+
+                  <div className="achievement-card">
+                    <h3>2,000+</h3>
+                    <p>High-Quality Products</p>
+                  </div>
+                </div>
+
+                <hr id="hidehr" className="achievementhr" />
+
+                <div id="downcard" className="achievement-card">
+                  <h3>30,000+</h3>
+                  <p>Happy Costumers</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="right">
+              <div className="hero-image">
+                <img
+                  src={assets.smallstar}
+                  className="small star"
+                  alt="Small Star"
+                  draggable="false"
+                />
+                <img
+                  src={assets.bigstar}
+                  className="big star"
+                  alt="Big Star"
+                  draggable="false"
+                />
+                <img
+                  src={assets.hero_img}
+                  id="coupleimg"
+                  alt="A couple wearing Shop.co clothes."
+                  draggable="false"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </header>
+    </section>
 
-      {/* Hero Right Side */}
-
-        <img className='w-full sm:w-1/2' src={assets.hero_img} alt="" />
-
-    </div>
   )
 }
 

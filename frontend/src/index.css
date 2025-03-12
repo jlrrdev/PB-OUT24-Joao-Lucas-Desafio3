@@ -1,29 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-a.active hr{
-    display: block;
-}
-
-*{
-    font-family: "Satoshi";
-    font-weight: 400;
-}
-
-.integral-cf{
-    font-family: "Integral CF Regular";
-    font-weight: 700;
-    font-style: normal;
-}
-
-::-webkit-scrollbar{
-    display: none;
-}
-
-@media (max-width:640px) {
-    a.active{
-    background-color: black;
-    color: white;
-    }
-}

@@ -1,0 +1,172 @@
+  /* Testimonials */
+  
+  .testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 35px;
+    position: relative;
+    margin-top: 80px;
+  }
+  
+  .headingbtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .headingbtns h2 {
+    margin: 0;
+  }
+  
+  .headingbtns .leftright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .headingbtns .leftright .arrows {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .headingbtns .leftright .arrows.left {
+    margin-right: 16px;
+  }
+  
+  .testimonials .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% / 3);
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    margin: 0;
+    margin-top: 40px;
+  }
+  
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .carousel :where(.card, .img) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .card .namecheck {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 16px;
+  }
+  
+  .namecheck svg {
+    margin-left: 8px;
+  }
+  
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  
+  .carousel .card {
+    scroll-snap-align: start;
+    width: 400px;
+    height: 240px;
+    list-style: none;
+    border: 1px solid var(--bordercolor);
+    border-radius: 20px;
+  }
+  
+  .cardcontent {
+    padding: 28px 32px;
+    width: 400px;
+    height: 240px;
+  }
+  
+  .card h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0;
+  }
+  
+  .card p {
+    color: var(--lightblack);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0;
+    margin-top: 12px;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .testimonials .carousel {
+      grid-auto-columns: calc(100% / 2);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .testimonials .carousel {
+      grid-auto-columns: 100%;
+    }
+  }
+
+   /* Media Query for Tablet */
+  
+   @media (max-width: 1100px) {
+
+    /* Testimonials */
+  
+    .carousel .card {
+      width: unset;
+    }
+  
+    .cardcontent {
+      width: unset;
+      padding: 20px 20px;
+    }
+  
+    .testimonials {
+      margin-top: 50px;
+    }
+  
+    .testimonials .carousel {
+      gap: 30px;
+    }
+   }
+
+  /* Media Query for Phone */
+  
+  @media (max-width: 700px) {
+
+    /* Testimonials */
+  
+    .testimonials {
+      padding: 0;
+    }
+  
+    .testimonials .carousel {
+      padding-left: 0;
+      margin-top: 24px;
+    }
+  
+    .testimonials h2 {
+      text-align: left;
+    }
+  }

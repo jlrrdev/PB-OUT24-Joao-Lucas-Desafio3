@@ -1,0 +1,139 @@
+a.active hr{
+    display: block;
+}
+
+@media (max-width:640px) {
+    a.active{
+    background-color: black;
+    color: white;
+    }
+}
+
+/* ---- Root ---- */
+
+:root {
+    --white: #fff;
+    --lightgrey: #f2f0f1;
+    --darkgrey: #f0f0f0;
+    --svgcolor: #6c6c6c;
+    --mediumgrey: #00000066;
+    --bordercolor: #0000001a;
+    --navcontainer: #000000db;
+    --lightblack: #00000099;
+    --black: #000000;
+  
+  
+      /* ---- Fonts ---- */
+  
+      /*font-family: "Integral CF Bold";
+      font-family: "Integral CF Regular";
+      font-family: "Satoshi";
+      font-family: "Satoshi Black";*/
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Satoshi", sans-serif;
+  }
+  
+  .wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  
+  img,
+  svg {
+    user-select: none;
+  }
+
+  /* Media Query for Desktop */
+  
+  @media (min-width: 1200px) {
+  
+    .btn:hover {
+      transform: scale(1.05);
+    }
+  
+    .btn.light:hover {
+      background-color: var(--lightgrey);
+    }
+  
+    .btn.dark:hover {
+      background-color: var(--lightblack);
+    }
+  
+    nav ul li a:hover{
+      color: var(--lightblack);
+    }
+  
+    .shop:hover .dropdown-container {
+      display: block;
+    }
+  
+    .shop:hover .dropdown-icon {
+      transform: rotate(180deg);
+    }
+  
+    .sections-clothes:hover .sections-container {
+      display: inline-table;
+    }
+  
+    .achievement-card:hover {
+      transform: scale(1.05);
+    }
+  
+    .brand-container img:hover {
+      transform: scale(1.1);
+    }
+  
+    .clothes-section .clothing-card:hover {
+      transform: scale(1.05);
+    }
+  
+    .styleimg:hover {
+      transform: scale(1.02);
+    }
+  
+    .headingbtns .leftright .arrows:hover {
+      transform: scale(1.2);
+    }
+  
+    .carousel .card:hover {
+      border: 2px solid var(--bordercolor);
+    }
+  }
+
+    /* Media Query for Tablet */
+  
+    @media (max-width: 1100px) {
+    
+      /* Wrapper */
+    
+      .wrapper {
+        max-width: 700px;
+      }
+    
+  }
+
+    /* Media Query for Phone */
+  
+    @media (max-width: 700px) {
+  
+      /* Wrapper */
+    
+      .wrapper {
+        width: 100%;
+        padding: 0 16px;
+      }  
+
+      .mobile-nowrap {
+        padding: 0;
+      }
+
+    }

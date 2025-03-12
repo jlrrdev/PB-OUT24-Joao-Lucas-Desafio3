@@ -12,13 +12,24 @@ import Orders from './pages/Orders'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
+import NewsletterBox from './components/NewsletterBox'
 import { ToastContainer, toast } from 'react-toastify';
+
+// CSS
+
+import './styles/allpages/global.css'; 
+import './styles/allpages/buttons.css'; 
+import './styles/allpages/newsletter-bar.css'; 
+import './styles/allpages/navbar.css'; 
+import './styles/allpages/footer.css'; 
+import NewsletterBar from './components/NewsletterBar'
 
 const App = () => {
   return (
-    <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+    <div>
       
       <ToastContainer/>
+      <NewsletterBar/>
       <Navbar/>
       <SearchBar/>
       <Routes>
@@ -32,7 +43,9 @@ const App = () => {
         <Route path='/place-order' element={<PlaceOrder/>} />
         <Route path='/orders' element={<Orders/>} />
       </Routes>
+      <NewsletterBox/>
       <Footer/>
+      
     </div>
   )
 }
