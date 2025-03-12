@@ -25,6 +25,9 @@ import './styles/allpages/footer.css';
 import NewsletterBar from './components/NewsletterBar'
 
 const App = () => {
+
+  
+
   return (
     <div>
       

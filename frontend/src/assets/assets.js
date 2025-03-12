@@ -87,6 +87,13 @@ import prada from './brand/prada.png'
 import versace from './brand/versace.png'
 import zara from './brand/zara.png'
 
+// Stylegrid
+
+import casual from './stylegrid/frame61.png'
+import formal from './stylegrid/frame62.png'
+import party from './stylegrid/frame63.png'
+import gym from './stylegrid/frame64.png'
+
 // Footer
 
     // Social
@@ -128,11 +135,21 @@ export const assets = {
     cross_icon,
     smallstar,
     bigstar,
+
+    // Brands
+
     calvin,
     gucci,
     prada,
     versace,
     zara,
+
+    // Stylegrid
+
+    casual,
+    formal,
+    party,
+    gym,
 
     // Footer
 

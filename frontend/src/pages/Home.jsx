@@ -6,12 +6,14 @@ import Brands from '../components/Brands'
 
 // CSS
 
-import '../styles/homepage/brands.css'; 
-import '../styles/homepage/testimonials.css'; 
-import '../styles/homepage/clothes.css'; 
 import '../styles/homepage/hero.css'; 
-import '../styles/homepage/newsletter.css'; 
+import '../styles/homepage/brands.css'; 
+import '../styles/homepage/clothes.css'; 
 import '../styles/homepage/stylegrid.css'; 
+import '../styles/homepage/testimonials.css'; 
+import '../styles/homepage/newsletter.css'; 
+import StyleGrid from '../components/StyleGrid'
+import HappyCostumers from '../components/HappyCostumers'
 
 const Home = () => {
   return (
@@ -20,6 +22,8 @@ const Home = () => {
       <Brands/>
       <LatestCollection/>
       <BestSeller/>
+      <StyleGrid/>
+      <HappyCostumers/>
     </div>
   )
 }

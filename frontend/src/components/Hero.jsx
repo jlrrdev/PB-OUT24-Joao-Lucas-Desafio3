@@ -1,10 +1,9 @@
 import React from 'react'
 import {assets} from '../assets/assets'
+import { NavLink } from 'react-router-dom'
 
 const Hero = () => {
   return (
-
-    // Hero Section
 
     <section className="header">
       <header>
@@ -25,7 +24,11 @@ const Hero = () => {
                 </p>
               </div>
 
-              <a href="#" className="btn dark">Shop Now</a>
+              <NavLink to='/collection' className="btn dark">
+              
+              <p href="#">Shop Now</p>
+
+              </NavLink>
 
               <div id="acvcrds" className="achievement-cards">
                 <div className="maincards">

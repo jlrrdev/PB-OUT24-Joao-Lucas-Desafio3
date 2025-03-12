@@ -4,7 +4,7 @@ const AnnouncementBar = () => {
   const [isHidden, setIsHidden] = useState(false);
 
   const handleClose = () => {
-    setIsHidden(true); // Oculta a barra de anúncio
+    setIsHidden(true); // Hide adbar
     document.getElementById('desktop-nav')?.classList.add('navbar-top');
     document.getElementById('mobile-nav')?.classList.add('navbar-top');
   };
