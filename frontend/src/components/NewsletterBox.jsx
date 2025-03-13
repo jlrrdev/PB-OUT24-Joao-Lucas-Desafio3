@@ -43,7 +43,7 @@ const NewsletterSection = () => {
         <div className="wrapper">
           <form onSubmit={handleSubmit} noValidate>
             <p className="darkheader">
-              STAY UPTO DATE ABOUT<br className="br" />
+              STAY UPTO DATE ABOUT <br className="br" />
               OUR LATEST OFFERS
             </p>
             <div className="submit-container">

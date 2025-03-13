@@ -12,9 +12,11 @@ const Navbar = () => {
   return (
     <div className='flex items-center justify-between py-5 font-medium px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] fixed w-full z-50 bg-white shadow-md'>
 
-        <Link to='/'><img src={assets.logo} className='w-36' alt="" /></Link>
+        <a href="#top">
+        <img src={assets.logo} className='w-36' alt="" />
+        </a>
 
-        <ul className='hidden sm:flex gap-5 text-sm text-gray-700 hidden'>
+        <ul className='sm:flex gap-5 text-sm text-gray-700 hidden'>
 
           <NavLink to='/' className='flex flex-col items-center gap-1' >
 
