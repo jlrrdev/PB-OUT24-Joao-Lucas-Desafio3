@@ -1,5 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 a.active hr{
     display: block;
+}
+
+*{
+    font-family: "Satoshi",sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 @media (max-width:640px) {
@@ -39,7 +51,6 @@ a.active hr{
   
   body {
     margin: 0;
-    font-family: "Satoshi", sans-serif;
   }
   
   .wrapper {
@@ -106,6 +117,10 @@ a.active hr{
   
     .carousel .card:hover {
       border: 2px solid var(--bordercolor);
+    }
+
+    footer .social img:hover{
+      transform: scale(1.1);
     }
 
     .footer-links-container a:hover{

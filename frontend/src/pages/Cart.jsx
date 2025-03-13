@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
-import Title from '../components/Title';
 import { assets } from '../assets/assets';
 import CartTotal from '../components/CartTotal';
 
@@ -28,10 +27,10 @@ const Cart = () => {
   },[cartItems])
 
   return (
-    <div className='border-t pt-14'>
+    <div className='border-t pt-20 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
 
       <div className='text-2xl mb-3'>
-        <Title text1={'YOUR'} text2={'CART'}/>
+        <p>Your cart</p>
       </div>
 
       <div>

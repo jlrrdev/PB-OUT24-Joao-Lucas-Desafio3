@@ -37,16 +37,17 @@ const Hero = () => {
                     <p>International Brands</p>
                   </div>
 
-                  <hr className="achievementhr" />
+                  <hr className="ml-7 mr-7 h-full w-0.5 bg-[#0000001a] border-none transform -translate-x-1/2" />
 
                   <div className="achievement-card">
                     <h3>2,000+</h3>
                     <p>High-Quality Products</p>
                   </div>
+
+                  <hr id="hidehr" className="ml-7 mr-7 h-full w-0.5 bg-[#0000001a] border-none transform -translate-x-1/2" />
+
                 </div>
-
-                <hr id="hidehr" className="achievementhr" />
-
+                
                 <div id="downcard" className="achievement-card">
                   <h3>30,000+</h3>
                   <p>Happy Costumers</p>

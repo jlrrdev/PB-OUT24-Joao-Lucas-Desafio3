@@ -10,7 +10,7 @@ const AnnouncementBar = () => {
   };
 
   return (
-    <section className="newsleter">
+    <section className="newsleter sticky w-full top-0 z-50">
       <div
         id="announcement-bar"
         className={isHidden ? 'hidden' : ''}

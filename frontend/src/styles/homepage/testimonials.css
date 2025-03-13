@@ -38,7 +38,7 @@
   .testimonials .carousel {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc(100% / 3);
+    grid-auto-columns: calc(96% / 3);
     gap: 20px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -117,7 +117,7 @@
   
   @media screen and (max-width: 1100px) {
     .testimonials .carousel {
-      grid-auto-columns: calc(100% / 2);
+      grid-auto-columns: calc(96% / 2);
     }
   }
   
@@ -146,9 +146,6 @@
       margin-top: 50px;
     }
   
-    .testimonials .carousel {
-      gap: 30px;
-    }
    }
 
   /* Media Query for Phone */

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
-import Title from './Title';
 import ProductItem from './ProductItem';
+import { NavLink } from 'react-router-dom';
 
 const LatestCollection = () => {
 
@@ -10,27 +10,35 @@ const LatestCollection = () => {
 
     useEffect(()=>{
 
-        setLatestProducts(products.slice(0,5));
+        setLatestProducts(products.slice(0,4));
 
     },[])
 
   return (
-    <div className='my-10'>
-      <div className='text-center py-8 text-3xl'>
-        <Title text1={'NEW'} text2={'ARRIVALS'}/>
+    <section class="clothes-section">
+      <div className='mobile-nowrap wrapper'>
+
+        <h2 class="darkheader">NEW ARRIVALS</h2>
+
+          {/* Rendering Products */}
+
+          <div className='clothes-cards'>
+              {
+                  latestProducts.map((item,index)=>(
+                      <ProductItem key={index} id={item._id} image={item.image} name={item.name} price={item.price}/>
+                  ))
+              }
+          </div>
+
+          <NavLink to='/collection' className="btn light">
+              
+              <p id="firstbtn">View All</p>
+
+          </NavLink>
+
+        <hr />
       </div>
-
-        {/* Rendering Products */}
-
-        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6'>
-            {
-                latestProducts.map((item,index)=>(
-                    <ProductItem key={index} id={item._id} image={item.image} name={item.name} price={item.price}/>
-                ))
-            }
-        </div>
-
-    </div>
+    </section>
   )
 }
 

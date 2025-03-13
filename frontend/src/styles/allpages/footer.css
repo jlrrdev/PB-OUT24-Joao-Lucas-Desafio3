@@ -10,6 +10,11 @@
     text-decoration: none;
     color: var(--lightblack);
     font-weight: 400;
+    transition: all 0.1s ease-in-out;
+  }
+
+  footer img {
+    transition: all 0.1s ease-in-out;
   }
   
   footer h3 {
@@ -69,6 +74,10 @@
     width: 100%;
     justify-content: space-around;
   }
+
+  footer .social{
+    display: flex;
+  }
   
   footer .social a {
     margin-right: 12px;
@@ -79,6 +88,13 @@
     justify-content: space-between;
     align-items: center;
     color: var(--lightblack);
+  }
+
+  footer .copyright p{
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+
   }
   
   footer .copyright .cardslogo {

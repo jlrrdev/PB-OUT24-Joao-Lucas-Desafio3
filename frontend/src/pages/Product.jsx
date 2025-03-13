@@ -29,7 +29,7 @@ const Product = () => {
   },[productId, products])
 
   return productData ?(
-    <div className='border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100'>
+    <div className='border-t-2 pt-20 transition-opacity ease-in duration-500 opacity-100 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
 
       {/* Product data */}
       

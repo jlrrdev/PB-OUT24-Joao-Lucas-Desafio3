@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import { assets } from '../assets/assets';
-import Title from '../components/Title';
 import ProductItem from '../components/ProductItem';
 
 const Collection = () => {
@@ -91,7 +90,7 @@ const Collection = () => {
   },[sortType])
 
   return (
-    <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t'>
+    <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-20 border-t px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
        
       {/* Filter Options */}
 
@@ -144,7 +143,7 @@ const Collection = () => {
 
       <div className='flex-1'>
         <div className='flex justify-between text-base sm:text-2xl mb-4'>
-          <Title text1={'ALL'} text2={'COLLECTIONS'}/>
+          <p>All collections</p>
 
           {/* Product Sort */}
 

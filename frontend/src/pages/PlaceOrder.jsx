@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react'
-import Title from '../components/Title'
 import CartTotal from '../components/CartTotal'
 import { assets } from '../assets/assets'
 import { ShopContext } from '../context/ShopContext'
@@ -11,7 +10,7 @@ const PlaceOrder = () => {
   const {navigate} = useContext(ShopContext);
 
   return (
-    <div className='flex flex-col sm:flex-row justify-between gap-4 pt-5 sm:pt-14 min-h-[80vh] border-top'>
+    <div className='flex flex-col sm:flex-row justify-between gap-4 pt-22 sm:pt-14 min-h-[80vh] border-top px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
 
       {/* Left Side */}
 
@@ -19,7 +18,7 @@ const PlaceOrder = () => {
 
         <div className='text-xl sm:text-2xl my-3'>
 
-          <Title text1={'DELIVERY'} text2={'INFORMATION'}/>
+          <p>Delivery information</p>
 
         </div>
 
@@ -60,7 +59,7 @@ const PlaceOrder = () => {
 
           <div className='mt-12'>
 
-            <Title text1={'PAYMENT'} text2={'METHOD'}/>
+            <p>Payment Method</p>
 
             {/* Payment Method Selection */}
 

@@ -14,6 +14,8 @@ import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 import NewsletterBox from './components/NewsletterBox'
 import { ToastContainer, toast } from 'react-toastify';
+import NewsletterBar from './components/NewsletterBar'
+import useSmoothScroll from './hooks/useSmoothScroll'
 
 // CSS
 
@@ -22,14 +24,13 @@ import './styles/allpages/buttons.css';
 import './styles/allpages/newsletter-bar.css'; 
 import './styles/allpages/navbar.css'; 
 import './styles/allpages/footer.css'; 
-import NewsletterBar from './components/NewsletterBar'
 
 const App = () => {
 
-  
+  useSmoothScroll();
 
   return (
-    <div>
+    <div id='top'>
       
       <ToastContainer/>
       <NewsletterBar/>
