@@ -20,28 +20,28 @@ const Navbar = () => {
 
           <NavLink to='/' className='flex flex-col items-center gap-1' >
 
-            <p>HOME</p>
+            <p>Home</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
 
           </NavLink>
 
           <NavLink to='/collection' className='flex flex-col items-center gap-1' >
 
-            <p>COLLECTION</p>
+            <p>Collection</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
 
           </NavLink>
 
-          <NavLink to='/about' className='flex flex-col items-center gap-1' >
+          <NavLink to='/Brands' className='flex flex-col items-center gap-1' >
 
-            <p>ABOUT</p>
+            <p>Brands</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
 
           </NavLink>
 
-          <NavLink to='/contact' className='flex flex-col items-center gap-1' >
+          <NavLink to='/OnSale' className='flex flex-col items-center gap-1' >
 
-            <p>CONTACT</p>
+            <p>On Sale</p>
             <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
 
           </NavLink>

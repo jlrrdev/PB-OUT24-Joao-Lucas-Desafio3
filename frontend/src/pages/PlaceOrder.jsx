@@ -16,7 +16,7 @@ const PlaceOrder = () => {
 
       <div className='flex flex-col gap-4 w-full sm:max-w-[480px]'>
 
-        <div className='text-xl sm:text-2xl my-3'>
+        <div className='text-xl sm:text-2xl mt-6 mb-3 font-bold'>
 
           <p>Delivery information</p>
 
@@ -24,29 +24,29 @@ const PlaceOrder = () => {
 
         <div className='flex gap-3'>
 
-          <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='First name'/>
-          <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='Last name'/>
+          <input className='border rounded-3xl border-gray-300 py-1.5 px-3.5 w-full' type="text" placeholder='First name'/>
+          <input className='border rounded-3xl border-gray-300 py-1.5 px-3.5 w-full' type="text" placeholder='Last name'/>
 
         </div>
 
-          <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="email" placeholder='Email Address'/>
-          <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='Street'/>
+          <input className='border rounded-3xl border-gray-300 py-1.5 px-3.5 w-full' type="email" placeholder='Email Address'/>
+          <input className='border rounded-3xl border-gray-300 py-1.5 px-3.5 w-full' type="text" placeholder='Street'/>
 
         <div className='flex gap-3'>
 
-          <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='City'/>
-          <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='State'/>
+          <input className='border rounded-3xl border-gray-300 py-1.5 px-3.5 w-full' type="text" placeholder='City'/>
+          <input className='border rounded-3xl border-gray-300 py-1.5 px-3.5 w-full' type="text" placeholder='State'/>
 
         </div>
 
         <div className='flex gap-3'>
 
-          <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="number" placeholder='Zipcode'/>
-          <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="text" placeholder='Country'/>
+          <input className='border rounded-3xl border-gray-300 py-1.5 px-3.5 w-full' type="number" placeholder='Zipcode'/>
+          <input className='border rounded-3xl border-gray-300 py-1.5 px-3.5 w-full' type="text" placeholder='Country'/>
 
         </div>
 
-          <input className='border border-gray-300 rounded py-1.5 px-3.5 w-full' type="number" placeholder='Phone'/>
+          <input className='border rounded-3xl border-gray-300 py-1.5 px-3.5 w-full' type="number" placeholder='Phone'/>
 
       </div>
 
@@ -57,15 +57,15 @@ const PlaceOrder = () => {
             <CartTotal/>
           </div>
 
-          <div className='mt-12'>
+          <div className='mt-12 font-bold'>
 
-            <p>Payment Method</p>
+            <p className='mb-2'>Payment Method</p>
 
             {/* Payment Method Selection */}
 
             <div className='flex gap-3 flex-col xl:flex-row'>
 
-              <div onClick={()=>setMethod('apple')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
+              <div onClick={()=>setMethod('apple')} className='flex rounded-3xl items-center gap-3 border p-2 px-3 cursor-pointer'>
 
                 <p className={`min-w-3.5 h-3.5 border rounded-full ${method === 'apple' ? 'bg-black' : ''}`}></p>
 
@@ -73,7 +73,7 @@ const PlaceOrder = () => {
 
               </div>
 
-              <div onClick={()=>setMethod('gpay')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
+              <div onClick={()=>setMethod('gpay')} className='flex rounded-3xl items-center gap-3 border p-2 px-3 cursor-pointer'>
 
                 <p className={`min-w-3.5 h-3.5 border rounded-full ${method === 'gpay' ? 'bg-black' : ''}`}></p>
 
@@ -81,7 +81,7 @@ const PlaceOrder = () => {
 
               </div>
 
-              <div onClick={()=>setMethod('mastercard')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
+              <div onClick={()=>setMethod('mastercard')} className='flex rounded-3xl items-center gap-3 border p-2 px-3 cursor-pointer'>
 
                 <p className={`min-w-3.5 h-3.5 border rounded-full ${method === 'mastercard' ? 'bg-black' : ''}`}></p>
 
@@ -89,7 +89,7 @@ const PlaceOrder = () => {
 
               </div>
 
-              <div onClick={()=>setMethod('paypal')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
+              <div onClick={()=>setMethod('paypal')} className='flex rounded-3xl items-center gap-3 border p-2 px-3 cursor-pointer'>
 
                 <p className={`min-w-3.5 h-3.5 border rounded-full ${method === 'paypal' ? 'bg-black' : ''}`}></p>
 
@@ -97,7 +97,7 @@ const PlaceOrder = () => {
 
               </div>
 
-              <div onClick={()=>setMethod('visa')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
+              <div onClick={()=>setMethod('visa')} className='flex rounded-3xl items-center gap-3 border p-2 px-3 cursor-pointer'>
 
                 <p className={`min-w-3.5 h-3.5 border rounded-full ${method === 'visa' ? 'bg-black' : ''}`}></p>
 
@@ -109,7 +109,7 @@ const PlaceOrder = () => {
 
             <div className='w-full text-end mt-8'>
 
-              <button onClick={()=>navigate('/orders')} className='bg-black text-white px-16 py-3 text-sm'>PLACE ORDER</button>
+              <button onClick={()=>navigate('/orders')} className='bg-black text-white w-full rounded-3xl text-sm px-8 py-3'>PLACE ORDER</button>
 
             </div>
 

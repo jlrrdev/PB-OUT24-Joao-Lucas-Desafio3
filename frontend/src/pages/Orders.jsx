@@ -8,8 +8,8 @@ const Orders = () => {
   return (
     <div className='border-t pt-20 px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
       
-      <div className='text-2xl'>
-        <p>My orders</p>
+      <div className='text-2xl mb-3'>
+        <p className='text-left mt-0 mb-4 darkheader'>My orders</p>
       </div>
 
       <div>
@@ -33,7 +33,7 @@ const Orders = () => {
                   <p className='min-w-2 h-2 rounded-full bg-green-500'></p>
                   <p className='text-sm md:text-base'>Ready to ship</p>
                 </div>
-                <button className='border px-4 py-2 text-sm font-medium rounded-sm'>Track Order</button>
+                <button className='border px-4 py-2 text-sm font-medium rounded-3xl'>Track Order</button>
               </div>
             </div>
           ))
