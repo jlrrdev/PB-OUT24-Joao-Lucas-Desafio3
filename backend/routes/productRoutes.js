@@ -2,7 +2,6 @@ const express = require('express');
 const Product = require('../models/product'); // Modelo de produto
 const router = express.Router();
 
-// Rota para buscar todos os produtos
 router.get('/products', async (req, res) => {
   try {
     const products = await Product.find();
@@ -12,7 +11,6 @@ router.get('/products', async (req, res) => {
   }
 });
 
-// Rota para buscar um produto por ID
 router.get('/products/:id', async (req, res) => {
   try {
     const product = await Product.findById(req.params.id);
