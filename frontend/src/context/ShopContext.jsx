@@ -8,20 +8,18 @@ const ShopContextProvider = (props) => {
     const currency = '$';
     const delivery_fee = 10;
     
-    // Estado para os produtos, carrinho, etc.
-    const [products, setProducts] = useState([]);  // Agora os produtos vêm do backend
+    const [products, setProducts] = useState([]); 
     const [search, setSearch] = useState('');
     const [showSearch, setShowSearch] = useState(false);
     const [cartItems, setCartItems] = useState({});
     const navigate = useNavigate();
 
-    // Carregar produtos do backend ao montar o componente
     useEffect(() => {
         const fetchProducts = async () => {
             try {
                 const response = await fetch('http://localhost:5000/api/products');
                 const data = await response.json();
-                setProducts(data);  // Armazena os produtos no estado
+                setProducts(data); 
             } catch (error) {
                 console.error("Erro ao buscar produtos:", error);
                 toast.error("Erro ao carregar produtos. Tente novamente.", {
@@ -35,7 +33,7 @@ const ShopContextProvider = (props) => {
             }
         };
         fetchProducts();
-    }, []);  // O array vazio faz com que essa função seja chamada apenas uma vez após o componente ser montado
+    }, []);
 
     const addToCart = async (itemId, size) => {
         if (!size) {
