@@ -1,11 +1,10 @@
-// models/Product.js
 const mongoose = require('mongoose');
 
 const productSchema = new mongoose.Schema({
   name: String,
   description: String,
   price: Number,
-  image: [String], // array de URLs das imagens
+  image: [String], 
   category: String,
   subCategory: String,
   sizes: [String],
