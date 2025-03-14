@@ -6,7 +6,7 @@ const productRoutes = require('./routes/productRoutes');
 const app = express();
 const port = 5000;
 
-mongoose.connect('mongodb://0.0.0.0:27017/loja', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/loja', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Conectado ao MongoDB"))
   .catch((err) => console.log("Erro ao conectar ao MongoDB:", err));
 
