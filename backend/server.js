@@ -13,8 +13,7 @@ mongoose.connect('mongodb://localhost:27017/loja', { useNewUrlParser: true, useU
 app.use(cors());
 app.use(express.json());
 
-// Use as rotas
-app.use('/api', productRoutes);  // Aqui, todas as rotas de products vão começar com "/api"
+app.use('/api', productRoutes);
 
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
