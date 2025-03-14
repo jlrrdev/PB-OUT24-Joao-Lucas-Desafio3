@@ -1,5 +1,5 @@
 const express = require('express');
-const Product = require('../models/Product'); // Modelo de produto
+const Product = require('../models/product'); // Modelo de produto
 const router = express.Router();
 
 // Rota para buscar todos os produtos
