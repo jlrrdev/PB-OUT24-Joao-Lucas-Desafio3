@@ -1,5 +1,9 @@
 const express = require('express');
+<<<<<<< HEAD
 const Product = require('../models/Product');
+=======
+const Product = require('../models/product'); // Modelo de produto
+>>>>>>> 87d3a7b8c04205918d0489e1242036aecbb1f05d
 const router = express.Router();
 
 router.get('/products', async (req, res) => {

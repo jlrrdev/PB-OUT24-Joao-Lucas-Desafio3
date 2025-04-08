@@ -13,7 +13,11 @@ const NewsletterSection = () => {
   const showMessage = (text, type) => {
     setMessage(text);
     setMessageType(type);
+<<<<<<< HEAD
     setEmail('');
+=======
+    setEmail(''); 
+>>>>>>> 87d3a7b8c04205918d0489e1242036aecbb1f05d
 
     setTimeout(() => {
       setMessage('');
@@ -75,7 +79,11 @@ const NewsletterSection = () => {
                   placeholder="Enter your email address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+<<<<<<< HEAD
                   className={message ? 'hide-placeholder' : ''} 
+=======
+                  className={message ? 'hide-placeholder' : ''}
+>>>>>>> 87d3a7b8c04205918d0489e1242036aecbb1f05d
                 />
               </div>
               <button className="btn light">Subscribe to Newsletter</button>

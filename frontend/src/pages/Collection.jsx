@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import { assets } from '../assets/assets';
 import ProductItem from '../components/ProductItem';
-import { Range } from 'react-range'; // Importando o componente Range da biblioteca react-range
+import { Range } from 'react-range';
 
 const Collection = () => {
 
@@ -11,10 +11,9 @@ const Collection = () => {
   const [filterProducts, setFilterProducts] = useState([]);
   const [category, setCategory] = useState([]);
   const [subCategory, setSubCategory] = useState([]);
-  const [priceRange, setPriceRange] = useState([0, 300]); // Estado para o intervalo de preço
+  const [priceRange, setPriceRange] = useState([0, 300]);
   const [sortType, setSortType] = useState('relavent');
 
-  // Função para alternar categoria
   const toggleCategory = (e) => {
     if (category.includes(e.target.value)) {
       setCategory(prev => prev.filter(item => item !== e.target.value));
@@ -23,7 +22,7 @@ const Collection = () => {
     }
   };
 
-  // Função para alternar subcategoria
+
   const toggleSubCategory = (e) => {
     if (subCategory.includes(e.target.value)) {
       setSubCategory(prev => prev.filter(item => item !== e.target.value));
@@ -32,9 +31,9 @@ const Collection = () => {
     }
   };
 
-  // Função para aplicar o filtro
+
   const applyFilter = () => {
-    let productsCopy = products.slice();  // Faz uma cópia dos produtos
+    let productsCopy = products.slice();  
 
     if (showSearch && search) {
       productsCopy = productsCopy.filter(item => item.name.toLowerCase().includes(search.toLowerCase()));
@@ -48,10 +47,8 @@ const Collection = () => {
       productsCopy = productsCopy.filter(item => subCategory.includes(item.subCategory));
     }
 
-    // Filtro de preço
     productsCopy = productsCopy.filter(item => item.price >= priceRange[0] && item.price <= priceRange[1]);
 
-    // Aplicar ordenação (de acordo com o `sortType` após aplicar os filtros)
     switch (sortType) {
       case 'low-high':
         productsCopy = productsCopy.sort((a, b) => a.price - b.price);
@@ -62,13 +59,12 @@ const Collection = () => {
         break;
       
       default:
-        break;  // Se for "relavent" ou qualquer outro valor, não aplicamos ordenação.
+        break; 
     }
 
-    setFilterProducts(productsCopy);  // Atualiza a lista de produtos filtrados e ordenados
+    setFilterProducts(productsCopy);  
   };
 
-  // Chama a função de filtro sempre que algum filtro mudar
   useEffect(() => {
     applyFilter();
   }, [category, subCategory, search, showSearch, priceRange, sortType]);
